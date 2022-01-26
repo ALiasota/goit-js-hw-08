@@ -25,7 +25,8 @@ refs.form.addEventListener('input', throttle((e) => {
 insertValues();
 
 refs.form.addEventListener('submit', (e) => {
-    e.preventDefault();        
+    e.preventDefault();   
+        
     formData[e.currentTarget.elements[0].name] = e.currentTarget.elements[0].value;
     formData[e.currentTarget.elements[1].name] = e.currentTarget.elements[1].value;
     console.log(formData);
